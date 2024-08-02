@@ -4,7 +4,7 @@ import { engine } from 'express-handlebars';
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import multer from "multer";
-import { PORT, FRONTEND_URL } from "./database/config.js";
+import { PORT, FRONTEND_URL } from "./config/config.js";
 import app_router from "./modules/app.router.js";
 import cors from "cors";
 const app = express();

@@ -1,4 +1,4 @@
-import pool from "../../database/conection-db.js";
+import pool from "../../config/conection-db.js";
 
 class CD_FormatoDiagnostico {
 
