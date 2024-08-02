@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Multipurpose, super flexible, powerful, clean modern responsive bootstrap 5 admin template">
+    <meta name="keywords"
+        content="admin template, AdminX admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="Arteam">
+    <link rel="icon" href="/adminX/assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/adminX/assets/images/logo/favicon.png" type="image/x-icon">
+
+    <title>AdminX - Premium Admin Template</title>
+
+    <!--font-awesome-css-->
+    <link rel="stylesheet" href="/adminX/assets/vendor/fontawesome/css/all.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- tabler icons-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/tabler-icons/tabler-icons.css">
+
+    <!--flag Icon css-->
+    {{!--
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/flag-icons-master/flag-icon.css"> --}}
+
+    <!--animation-css-->
+    {{!--
+    <link rel="stylesheet" href="/adminX/assets/vendor/animation/animate.min.css"> --}}
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/bootstrap/bootstrap.min.css">
+
+    <!-- simplebar css-->
+    {{!--
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/simplebar/simplebar.css"> --}}
+
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/css/style.css">
+
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/css/responsive.css">
+
+    {{!-- FONT AWESOME 5 --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    {{!-- sweetalert2 --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css"
+        integrity="sha256-h2Gkn+H33lnKlQTNntQyLXMWq7/9XI2rlPCsLsVcUBs=" crossorigin="anonymous">
+
+    {{!-- simple-datatables --}}
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+
+    <link href="/personal.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-wrapper">
+
+        <div class="loader-wrapper">
+            <div class="app-loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Menu Navigation starts -->
+        <nav class="dark-sidebar">
+            <div class="app-logo">
+                <a class="logo d-inline-block" href="index.html">
+                    <img src="/adminX/assets/images/logo/dark.png" alt="#" class="dark-logo">
+                    <img src="/adminX/assets/images/logo/01.png" alt="#" class="light-logo">
+                </a>
+
+                <span class="bg-light-primary toggle-semi-nav">
+                    <i class="ti ti-chevrons-right f-s-20"></i>
+                </span>
+            </div>
+            <div class="app-nav" id="app-simple-bar">
+                <ul class="main-nav p-0 mt-2">
+                    <li class="menu-title"> <span>Opciones</span></li>
+                    <li class="no-sub">
+                        <a class="" href="/diagnostico">
+                            <i class="ti ti-table"></i> Diagnostico
+                        </a>
+                    </li>
+                    <li class="no-sub">
+                        <a class="" href="/">
+                            <i class="ti ti-table"></i> Prueba
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-navs">
+                <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
+                <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
+            </div>
+
+        </nav>
+        <!-- Menu Navigation ends -->
+
+        <div class="app-content">
+            <div class="">
+
+                <!-- Header Section starts -->
+                <header class="header-main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 d-flex align-items-center header-left">
+                                                <span class="header-toggle me-3">
+                                                    <i class="ti ti-category"></i>
+                                                </span>
+
+                                                <div class="header-searchbar">
+                                                    <form class="me-3 app-form app-icon-form " action="#">
+                                                        <div class="position-relative">
+                                                            <input type="search" class="form-control"
+                                                                placeholder="Search..." aria-label="Search">
+                                                            <i class="ti ti-search text-dark"></i>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="col-6 d-flex align-items-center justify-content-end header-right">
+                                                <ul class="d-flex align-items-center">
+                                                    <li class="header-search">
+                                                        <a href="#" class="d-block head-icon" role=button
+                                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                                            aria-controls="offcanvasTop">
+                                                            <i class="ti ti-search"></i>
+                                                        </a>
+
+                                                        <div class="offcanvas offcanvas-top search-canvas" tabindex="-1"
+                                                            id="offcanvasTop">
+                                                            <div class="offcanvas-body">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="flex-grow-1">
+                                                                        <form class="me-3 app-form app-icon-form "
+                                                                            action="#">
+                                                                            <div class="position-relative">
+                                                                                <input type="search"
+                                                                                    class="form-control"
+                                                                                    placeholder="Search..."
+                                                                                    aria-label="Search">
+                                                                                <i class="ti ti-search f-s-15"></i>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="offcanvas"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header-language">
+                                                        <div id="lang_selector" class="flex-shrink-0 dropdown">
+                                                            <a href="#" class="d-block head-icon ps-0"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <div class="lang-flag lang-en ">
+                                                                    <span class="flag rounded-circle overflow-hidden">
+                                                                        <i class=""></i>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                            <ul
+                                                                class="dropdown-menu language-dropdown dropdown-menu-end header-card border-0 p-0">
+                                                                <li>
+                                                                    <div class="card-header bg-dark py-2">
+                                                                        <h5 class="text-white">language <span
+                                                                                class="float-end"><i
+                                                                                    class="ti ti-language"></i></span>
+                                                                        </h5>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="lang lang-en selected dropdown-item p-2"
+                                                                    title="US">
+                                                                    <span class="d-flex align-items-center">
+                                                                        <i
+                                                                            class="flag-icon flag-icon-usa flag-icon-squared b-r-50 f-s-22"></i>
+                                                                        <span class="ps-2 text-secondary">US</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="lang lang-pt dropdown-item p-2" title="FR">
+                                                                    <span class="d-flex align-items-center">
+                                                                        <i
+                                                                            class="flag-icon flag-icon-fra flag-icon-squared b-r-50 f-s-22"></i>
+                                                                        <span class="ps-2 text-secondary">Fracnce</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="lang lang-es dropdown-item p-2" title="UK">
+                                                                    <span class="d-flex align-items-center">
+                                                                        <i
+                                                                            class="flag-icon flag-icon-gbr flag-icon-squared b-r-50 f-s-22"></i>
+                                                                        <span class="ps-2 text-secondary">UK</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="lang lang-es dropdown-item p-2" title="IT">
+                                                                    <span class="d-flex align-items-center">
+                                                                        <i
+                                                                            class="flag-icon flag-icon-ita flag-icon-squared b-r-50 f-s-22"></i>
+                                                                        <span class="ps-2 text-secondary">Italy</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="header-apps">
+                                                        <div class="flex-shrink-0 app-dropdown">
+                                                            <a href="#" class="d-block head-icon"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                                                aria-expanded="false">
+                                                                <i class="ti ti-apps"></i>
+                                                            </a>
+                                                            <div
+                                                                class="dropdown-menu headerapp-dropdown dropdown-menu-center bg-transparent border-0">
+                                                                <div class="card">
+                                                                    <div class="card-header bg-dark">
+                                                                        <h5 class="text-white">Shortcut
+                                                                            <span><i
+                                                                                    class="ti ti-apps text-white"></i></span>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="row row-cols-3">
+                                                                            <div class="d-flex-center text-center mb-3">
+                                                                                <a href="product.html">
+                                                                                    <span
+                                                                                        class="text-light-success h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-shopping-bag f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        E-shop</p>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="d-flex-center text-center mb-3">
+                                                                                <a href="email.html">
+                                                                                    <span
+                                                                                        class="text-light-primary h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-mail f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        Email</p>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="d-flex-center text-center mb-3">
+                                                                                <a href="chat.html">
+                                                                                    <span
+                                                                                        class="text-light-info h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-brand-hipchat f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        Chat</p>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="d-flex-center text-center">
+                                                                                <a href="project.html">
+                                                                                    <span
+                                                                                        class="text-light-warning h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-presentation f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        Project</p>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="d-flex-center text-center">
+                                                                                <a href="invoice.html">
+                                                                                    <span
+                                                                                        class="text-light-secondary h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-file-dollar f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        Invoice</p>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="d-flex-center text-center">
+                                                                                <a href="blog.html">
+                                                                                    <span
+                                                                                        class="text-light-danger h-60 w-60 d-flex-center b-r-100">
+                                                                                        <i
+                                                                                            class="ti ti-news f-s-26"></i>
+                                                                                    </span>
+                                                                                    <p class="mt-2 f-w-500 text-muted">
+                                                                                        Blog</p>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-dark w-100"><i
+                                                                                class="ti ti-plus"></i> View
+                                                                            More</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header-cart d-none d-sm-block">
+                                                        <div class="flex-shrink-0 app-dropdown">
+                                                            <a href="#" class="d-block head-icon position-relative"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                <i class="ti ti-shopping-cart"></i>
+                                                                <span
+                                                                    class="position-absolute translate-middle badge rounded-pill bg-danger badge-notification">4</span>
+                                                            </a>
+                                                            <div
+                                                                class="dropdown-menu dropdown-menu-end bg-transparent border-0">
+                                                                <div class="card">
+                                                                    <div class="card-header bg-dark">
+                                                                        <h5 class="text-white">Cart <span
+                                                                                class="float-end"><i
+                                                                                    class="ti ti-shopping-cart"></i></span>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="card-body p-0">
+                                                                        <div class="head-container app-scroll">
+                                                                            <div class="head-box">
+                                                                                <img src="/adminX/assets/images/ecommerce/10.png"
+                                                                                    alt="cart"
+                                                                                    class="h-50 me-2 bg-light-secondary p-1 b-r-100">
+                                                                                <div class="flex-grow-1">
+                                                                                    <a class="mb-0 text-dark f-w-500"
+                                                                                        href="product_details.html">
+                                                                                        Headphone
+                                                                                    </a>
+                                                                                    <p class="text-muted">$95 x 2</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <div>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12  star-filled"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled f-s-12 star-filled"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box">
+                                                                                <img src="/adminX/assets/images/ecommerce/07.png"
+                                                                                    alt="cart"
+                                                                                    class="h-50 object-fit-cover me-2 bg-light-dark p-1 b-r-100">
+                                                                                <div class="flex-grow-1">
+                                                                                    <a class="mb-0 text-dark f-w-500"
+                                                                                        href="product_details.html">
+                                                                                        Smart Watch</a>
+                                                                                    <p class="text-muted">$50.00</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <div>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12  star-filled"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled f-s-12 star-filled"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box">
+                                                                                <img src="/adminX/assets/images/ecommerce/02.png"
+                                                                                    alt="cart"
+                                                                                    class="h-50 object-fit-cover me-2 bg-light-dark p-1 b-r-100">
+                                                                                <div class="flex-grow-1">
+                                                                                    <a class="mb-0 text-dark f-w-500"
+                                                                                        href="product_details.html">Shoes
+                                                                                        Black</a>
+                                                                                    <p class="text-muted">$150.00</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <div>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled f-s-12  star-filled"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled f-s-12 star-filled"></i>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box ">
+                                                                                <img src="/adminX/assets/images/ecommerce/04.png"
+                                                                                    alt="cart"
+                                                                                    class="h-50 object-fit-cover me-2 bg-light-dark p-1 b-r-100">
+                                                                                <div class="flex-grow-1">
+                                                                                    <a class="mb-0 text-dark f-w-500"
+                                                                                        href="product_details.html">
+                                                                                        Sports
+                                                                                        shoes</a>
+                                                                                    <p class="text-muted">$200.00</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn last-box"></i>
+                                                                                    <div>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning f-s-12  star-filled"></i>
+                                                                                        <i
+                                                                                            class="ti ti-star-filled text-warning  f-s-12 star-filled"></i>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="hidden-massage py-4 px-3">
+                                                                                <img src="/adminX/assets/images/icons/cart.png"
+                                                                                    alt="cart" class="w-50 h-50 mb-3">
+                                                                                <div>
+                                                                                    <h6 class="mb-0">Your Cart is Empty
+                                                                                    </h6>
+                                                                                    <p class="text-secondary mb-0">Add
+                                                                                        some items :)</p>
+                                                                                    <a class="btn btn-light-primary btn-xs mt-2"
+                                                                                        href="product_details.html">Shop
+                                                                                        Now</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <div class="mb-2">
+                                                                            <h6 class="text-muted">Total <span
+                                                                                    class="float-end text-dark f-w-600">$495.00
+                                                                                </span></h6>
+                                                                        </div>
+                                                                        <button type="button"
+                                                                            class="btn btn-dark w-100">
+                                                                            <i class="ti ti-shopping-cart"></i>
+                                                                            Checkout</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header-dark head-icon">
+                                                        <div class="sun-logo">
+                                                            <i class="ti ti-moon-off"></i>
+                                                        </div>
+                                                        <div class="moon-logo">
+                                                            <i class="ti ti-moon-filled"></i>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header-notification">
+                                                        <div class="flex-shrink-0 app-dropdown">
+                                                            <a href="#" class="d-block head-icon position-relative"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                <i class="ti ti-bell"></i>
+                                                                <span
+                                                                    class="position-absolute translate-middle p-1 bg-success border border-light rounded-circle animate__animated animate__fadeIn animate__infinite animate__slower"></span>
+                                                            </a>
+                                                            <div
+                                                                class="dropdown-menu dropdown-menu-end bg-transparent border-0">
+                                                                <div class="card">
+                                                                    <div class="card-header bg-dark">
+                                                                        <h5 class="text-white">Notification <span
+                                                                                class="float-end">
+                                                                                <i
+                                                                                    class="ti ti-bell text-white"></i></span>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="card-body p-0">
+                                                                        <div class="head-container app-scroll">
+                                                                            <div class="head-box">
+                                                                                <span
+                                                                                    class="bg-secondary h-35 w-35 d-flex-center b-r-50 position-relative">
+                                                                                    <img src="/adminX/assets/images/ai_avtar/6.jpg"
+                                                                                        alt="" class="img-fluid b-r-50">
+                                                                                    <span
+                                                                                        class="position-absolute bottom-0 end-0 p-1 bg-secondary border border-light rounded-circle"></span>
+                                                                                </span>
+                                                                                <div class="flex-grow-1 ps-2">
+                                                                                    <h6 class="mb-0 ">Gene Hart</h6>
+                                                                                    <p class="text-secondary f-s-13">
+                                                                                        New account created</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <p class="f-s-12 text-muted">sep 23
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box">
+                                                                                <span
+                                                                                    class="text-light-primary h-40 w-40 d-flex-center b-r-50">
+                                                                                    <i
+                                                                                        class="ti ti-gift text-primary f-s-22"></i>
+                                                                                </span>
+                                                                                <div class="flex-grow-1 ps-2">
+                                                                                    <h6 class="mb-0">Gift-Voucher</h6>
+                                                                                    <p class="text-secondary f-s-13">50%
+                                                                                        sale active</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <p class="f-s-12 text-muted">min 02
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box">
+                                                                                <span
+                                                                                    class="bg-secondary h-35 w-35 d-flex-center b-r-50 position-relative">
+                                                                                    <img src="/adminX/assets/images/ai_avtar/4.jpg"
+                                                                                        alt="" class="img-fluid b-r-50">
+                                                                                    <span
+                                                                                        class="position-absolute bottom-0 end-0 p-1 bg-success border border-light rounded-circle"></span>
+                                                                                </span>
+                                                                                <div class="flex-grow-1 ps-2">
+                                                                                    <h6 class="mb-0">Simon Young</h6>
+                                                                                    <p class="text-secondary f-s-13">
+                                                                                        Hello ..!</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <p class="f-s-12 text-muted">Oct 10
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="head-box">
+                                                                                <span
+                                                                                    class="text-light-success h-40 w-40 d-flex-center b-r-50">
+                                                                                    <i
+                                                                                        class="ti ti-shopping-cart text-success f-s-22"></i>
+                                                                                </span>
+                                                                                <div class="flex-grow-1 ps-2">
+                                                                                    <h6 class="mb-0">Order Massage</h6>
+                                                                                    <p class="text-secondary f-s-13">
+                                                                                        Purchase ecommerce..</p>
+                                                                                </div>
+                                                                                <div class="text-end">
+                                                                                    <i
+                                                                                        class="ti ti-x text-dark f-s-15 close-btn"></i>
+                                                                                    <p class="f-s-12 text-muted">day 4
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="hidden-massage py-4 px-3">
+                                                                                <img src="/adminX/assets/images/icons/bell.png"
+                                                                                    class="w-50 h-50 mb-3 mt-2" alt="">
+                                                                                <div>
+                                                                                    <h6 class="mb-0">Notification Not
+                                                                                        Found</h6>
+                                                                                    <p class="text-secondary">When you
+                                                                                        have any notifications added
+                                                                                        here,will
+                                                                                        appear here.
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-dark w-100">
+                                                                            <i class="ti ti-plus"></i> View All</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header-profile">
+                                                        <div class="flex-shrink-0 dropdown">
+                                                            <a href="#" class="d-block head-icon pe-0"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="/adminX/assets/images/avtar/woman.jpg"
+                                                                    alt="mdo" class="rounded-circle h-35 w-35">
+                                                            </a>
+                                                            <ul
+                                                                class="dropdown-menu dropdown-menu-end header-card border-0 px-2">
+                                                                <li class="dropdown-item d-flex align-items-center p-2">
+                                                                    <span
+                                                                        class="h-35 w-35 d-flex-center b-r-50 position-relative">
+                                                                        <img src="/adminX/assets/images/avtar/woman.jpg"
+                                                                            alt="" class="img-fluid b-r-50">
+                                                                        <span
+                                                                            class="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle animate__animated animate__fadeIn animate__infinite animate__fast"></span>
+                                                                    </span>
+                                                                    <div class="flex-grow-1 ps-2">
+                                                                        <h6 class="mb-0"> Ninja Monaldo</h6>
+                                                                        <p class="f-s-12 mb-0 text-secondary">Web
+                                                                            Designer</p>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="app-divider-v dotted my-1"></li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="./profile.html">
+                                                                        <i class="ti ti-user-circle pe-1 f-s-18"></i>
+                                                                        Profile Detaiils
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="ti ti-notification pe-1 f-s-18"></i>
+                                                                        Notification
+                                                                    </a>
+                                                                </li>
+
+                                                                <li class="app-divider-v dotted my-1"></li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="ti ti-help pe-1 f-s-18"></i> Help
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="./faq.html">
+                                                                        <i class="ti ti-file-dollar pe-1 f-s-18"></i>
+                                                                        FAQ
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="./pricing.html">
+                                                                        <i
+                                                                            class="ti ti-currency-dollar pe-1 f-s-18"></i>
+                                                                        Pricing
+                                                                    </a>
+                                                                </li>
+                                                                <li class="app-divider-v dotted my-1"></li>
+                                                                <li class="btn-light-danger b-r-5">
+                                                                    <a class="dropdown-item mb-0 text-danger"
+                                                                        href="./sign_in.html">
+                                                                        <i
+                                                                            class="ti ti-logout pe-1 f-s-18 text-danger"></i>
+                                                                        Log Out
+                                                                    </a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- Header Section ends -->
+
+                <!-- Body main section starts -->
+                <main>
+                    <div class="container-fluid">
+                        {{{body}}}
+                    </div>
+                </main>
+                <!-- Body main section ends -->
+
+                <!-- tap on top -->
+                <div class="go-top">
+                    <span class="progress-value">
+                        <i class="ti ti-arrow-up"></i>
+                    </span>
+                </div>
+
+                <!-- Footer Section starts-->
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-9 col-12">
+                                <ul class="footer-text">
+                                    <li>
+                                        <p class="mb-0">Copyright © 2024 AdminX. All rights reserved.</p>
+                                    </li>
+                                    <li> <a href="#"> V1.0.0 </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="footer-text text-end">
+                                    <li> <a href="document.html"> Need Help <i class="ti ti-help"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer Section ends-->
+
+            </div>
+        </div>
+    </div>
+    <!-- essential   -->
+
+    <!--customizer-->
+    <div id="customizer"></div>
+
+    <!-- latest jquery-->
+    <script src="/adminX/assets/js/jquery-3.6.3.min.js"></script>
+
+    <!-- Simple bar js-->
+    {{!--
+    <script src="/adminX/assets/vendor/simplebar/simplebar.js"></script> --}}
+
+    <!-- Bootstrap js-->
+    <script src="/adminX/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="/adminX/assets/js/animation.js"></script>
+    {{!--
+    <script src="/adminX/assets/js/chat.js"></script> --}}
+
+    <!-- App js-->
+    <script src="/adminX/assets/js/script.js"></script>
+
+    <!-- Customizer js-->
+    <script src="/adminX/assets/js/customizer.js"></script>
+
+    {{! simple-datatables }}
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+</body>
+
+</html>

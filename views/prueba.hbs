@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator_simple.min.css" rel="stylesheet">
+    <link href="/personal.css" rel="stylesheet">
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- tabler icons-->
+    <link rel="stylesheet" type="text/css" href="/adminX/assets/vendor/tabler-icons/tabler-icons.css">
+</head>
+
+<body>
+    <main>
+        <div class="custom-header-main">
+            {{!-- <textarea name="nn" id="nn" rows="10" cols="50"></textarea> --}}
+            <button id="reactivity-add">Add New Row</button>
+            <button id="btn_d">data</button>
+            {{!-- <button id="btn-guardar">Guardar</button> --}}
+        </div>
+        <div class="container-fluid">
+            <div class="custom-title-table" id="titulo_tabla">
+                I. COMPROMISO E INVOLUCRAMIENTO
+            </div>
+            <div id="example-table" class="custom-border-table"></div>
+            {{!-- <div id="example-table2"></div> --}}
+
+            <script type="text/javascript"
+                src="https://unpkg.com/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.js"
+                integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script type="module" src="/controladores/p.js"></script>
+            {{!-- <div class="tabulator-edit-list tabulator-popup-container"
+                style="min-width: 203px; top: 62px; left: 306px;">
+                Texto</div> --}}
+            <!-- Bootstrap js-->
+            <script src="/adminX/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+        </div>
+    </main>
+</body>
+
+</html>

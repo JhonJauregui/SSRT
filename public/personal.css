@@ -1,0 +1,69 @@
+/* centrado horizaontal del titulo */
+.tabulator-col .tabulator-col-title {
+    text-align: center;
+}
+
+.tabulator-sortable .tabulator-col-title {
+    padding-left: 25px;
+}
+
+/* centrado vertical del titulo */
+.tabulator .tabulator-header .tabulator-col {
+    justify-content: center;
+}
+
+.green-cell {
+    background-color: #42ac5b;
+    color: black;
+}
+
+.red-cell {
+    background-color: #d33542;
+    color: black;
+}
+
+.custom-title-table {
+    background-color: #e6e6e64f;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: .6rem
+}
+
+.custom-border-table {
+    border: 1px solid #ddd;
+}
+
+.custom-header-main {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: .8rem;
+    background-color: #e6e6e65c;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    /* Espacio entre los botones */
+}
+
+.actions .c-btn-circle {
+    height: 27px;
+    width: 27px;
+    padding: 3px 5px 2px;
+    color: #666;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 50%;
+}
+
+.actions .c-btn-circle i {
+    font-size: 1rem;
+}
